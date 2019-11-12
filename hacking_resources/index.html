@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Hacking</title>
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- Main styling sheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Linking PureCSS styling-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+        crossorigin="anonymous">
+    <!-- extra Styling for the PureCSS side navbar (z-index in styles.css) -->
+    <link rel="stylesheet" href="../css/layout/purecss/side-menu.css">
+    <link rel="stylesheet" href="../css/layout/purecss/pure-min.css">
+
+    <!-- Styling for the lock logo shine effect -->
+    <link rel="stylesheet" href="../css/shine.css">
+
+    <!-- Styling for the Main content of the page ie. videos, writeups, images etc -->
+    <link rel="stylesheet" href="../css/layout/content.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- loading google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+
+
+    <!-- Style for table -->
+
+    <style>
+        table {
+
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid white;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #131e31;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <!-- Everything displayed on the page will be within this div container -->
+    <div class="container_">
+
+
+        <!-- Top Navbar -->
+        <section>
+            <div class="navbar" style="position: fixed; z-index: 2">
+                <ul>
+                    <li class="test-shine"><a href="https://0xapt.duckdns.org/"><img src="../resources/bash.png"
+                                alt="bash"></a></li>
+                    <li class="nav_links hvr-grow" id="margin-adj"><a href="https://0xapt.duckdns.org/"
+                            style="margin-left: 26px;" class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/home-icon.svg" alt="home"></span>
+                            <span class="text_disp">Home</span></a></li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/tools/"
+                            class="topnav_style"><span><img class="nav_icons" src="../resources/nav_icons/wrench.svg"
+                                    alt="tools"></span> <span class="text_disp">Tools</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/hacking_resources/"
+                            class="topnav_style"><span><img class="nav_icons" src="../resources/nav_icons/open-book.svg"
+                                    alt="resources"></span> <span class="text_disp">
+                                Resources</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/video/"
+                            class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/play-button.svg" alt="videos"></span> <span
+                                class="text_disp">
+                                Videos</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--#END# Top Navbar -->
+
+
+        <!-- Side Navbar -->
+        <section class="side_navbar">
+            <div id="layout">
+                <!-- Menu toggle -->
+                <a href="#menu" id="menuLink" class="menu-link"
+                    style=" width: 56px;background-color:#131e31;opacity: 55%;padding: 15px;">
+                    <!-- Hamburger icon -->
+                    <span></span>
+                </a>
+                <!-- Side Navbar Menu Items -->
+                <div id="menu">
+                    <div class="pure-menu">
+                        <ul class="pure-menu-list" style="border: 0">
+
+                            <li class="pure-menu-item">
+                                <a href="https://0xapt.duckdns.org/wifi/" class="pure-menu-link">WiFi ~ Getting
+                                    started</a>
+                                <a href="https://0xapt.duckdns.org/wifi/breaking_wps.html" class="pure-menu-link">WiFi ~
+                                    Breaking WPS</a>
+                                <a href="https://0xapt.duckdns.org/wifi/cracking-wpa2-pixie.html"
+                                    class="pure-menu-link">WiFi ~ Cracking WPA2</a>
+                                <a href="https://0xapt.duckdns.org/wifi/rogue-ap.html" class="pure-menu-link">WiFi ~
+                                    Rogue AP</a>
+                                <a href="https://0xapt.duckdns.org/web_hacking
+                            " class="pure-menu-link">Web Application</a>
+                                <a href="https://0xapt.duckdns.org/osint/
+                            " class="pure-menu-link">OSINT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #END# Side Navbar -->
+
+
+
+
+            <!-- Parent Container of all your content-->
+            <section id="content">
+
+                <!-- Main content of the page ie. Videos, Blogs, Images etc. Div's recommended (Check out content.css to change layout/ styling)
+    EXTRA NOTE - The width and height of this container stretches automatically with your content and wraps when it hits a certain width. Everything is set to be centered. Change content.css if you want to edit these options -->
+                <div id="inner_content"
+                    style="padding-left:10% !important; padding-right:10% !important; background:  #0d1523 !important; overflow:hidden">
+                    <h1 style="width: 100%;font-family: 'Quicksand', sans-serif">>Resources_</h1>
+                    <br>
+
+                    <!-- <h3 style="width:100%;text-align: center; margin-top: 50px; font-family: 'Quicksand', sans-serif">-
+                        OWASP TOP 10 -</h3> -->
+
+                    <img style="width: 60%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; border: 3px white solid;"
+                        src="https://media.giphy.com/media/26ufmv6jHg5wdEz2E/giphy.gif" alt="guy reading with glasses">
+
+
+
+                    <p style="width:100%; font-family: 'Quicksand'; margin-top: 50px; font-size: 21px;">
+
+
+                        We at <b>>Backspace_</b> love sharing knowledge and informaion. We hope that these resources
+                        help you in your neverending journey of learning.
+
+
+                        <h1 style="margin-top:50px;font-family: 'Quicksand', sans-serif;">OSINT</h1>
+
+                        <!--OSINT resources-->
+                        <table style="width: 100%; margin-top:50px;">
+                            <tr>
+                                <th>Resource</th>
+                                <th>URL</th>
+                            </tr>
+                            <tr>
+                                <td>OSINT Framework</td>
+                                <td><a href="https://osintframework.com/"
+                                        target="_blank">https://osintframework.com/</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>Spider Foot</td>
+                                <td><a href="https://www.spiderfoot.net/"
+                                        target="_blank">https://www.spiderfoot.net/</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>namechk</td>
+                                <td><a href="https://namechk.com/" target="_blank">https://namechk.com/</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>Intel Techniques</td>
+                                <td><a href="https://inteltechniques.com/index.html"
+                                        target="_blank">https://inteltechniques.com/index.html</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>Secjuice OSINT Write up</td>
+                                <td><a href="https://www.secjuice.com/introduction-to-open-source-intelligence-osint/"
+                                        target="_blank">https://www.secjuice.com/introduction-to-open-source-intelligence-osint/</a>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td><b>osint.link</b></td>
+                                <td><a href="https://osint.link/" target="_blank">https://osint.link/</a></td>
+                            </tr>
+                            <tr>
+                                <td>Sherlock (Find usernames)</td>
+                                <td><a href="https://github.com/sherlock-project/sherlock"
+                                        target="_blank">https://github.com/sherlock-project/sherlock</a></td>
+                            </tr>
+                            <tr>
+                                <td>Bascador (OSINT VM)</td>
+                                <td><a href="https://inteltechniques.com/buscador/index.html"
+                                        target="_blank">https://inteltechniques.com/buscador/index.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>Email Validator</td>
+                                <td><a href="https://tools.verifyemailaddress.io/"
+                                        target="_blank">https://tools.verifyemailaddress.io/</a>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <h1 style="margin-top:50px;font-family: 'Quicksand', sans-serif;">WiFi</h1>
+
+                        <!--WIFI resources-->
+                        <table style="width: 100%; margin-top:50px;">
+                            <tr>
+                                <th>Resource</th>
+                                <th>URL</th>
+                            </tr>
+                            <tr>
+                                <td>Router Sploit</td>
+                                <td><a href="https://github.com/threat9/routersploit"
+                                        target="_blank">https://github.com/threat9/routersploit</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>WiFi Arsenal</td>
+                                <td><a href="https://github.com/0x90/wifi-arsenal"
+                                        target="_blank">https://github.com/0x90/wifi-arsenal</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>Airgeddon</td>
+                                <td><a href="https://github.com/v1s1t0r1sh3r3/airgeddon"
+                                        target="_blank">https://github.com/v1s1t0r1sh3r3/airgeddon</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>Bettercap</td>
+                                <td><a href="https://inteltechniques.com/index.html"
+                                        target="_blank">https://inteltechniques.com/index.html</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>Secjuice OSINT Write up</td>
+                                <td><a href="https://www.secjuice.com/introduction-to-open-source-intelligence-osint/"
+                                        target="_blank">https://www.secjuice.com/introduction-to-open-source-intelligence-osint/</a>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>WIFI Pumpkin</td>
+                                <td><a href="https://github.com/P0cL4bs/WiFi-Pumpkin"
+                                        target="_blank">https://github.com/P0cL4bs/WiFi-Pumpkin</a></td>
+                            </tr>
+                            <tr>
+                                <td>Wireshark</td>
+                                <td><a href="https://www.wireshark.org/" target="_blank">https://www.wireshark.org/</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Intfernal-Twin</td>
+                                <td><a href="https://github.com/entropy1337/infernal-twin"
+                                        target="_blank">https://github.com/entropy1337/infernal-twin</a></td>
+                            </tr>
+                            <tr>
+                                <td>Fluxion</td>
+                                <td>
+                                    <a href="https://github.com/thehackingsage/Fluxion"
+                                        target="_blank">https://github.com/thehackingsage/Fluxion</a>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <h1 style="margin-top:50px;font-family: 'Quicksand', sans-serif;">Web Application</h1>
+
+                        <!--Web resources-->
+                        <table style="width: 100%; margin-top:50px;">
+                            <tr>
+                                <th>Resource</th>
+                                <th>URL</th>
+                            </tr>
+                            <tr>
+                                <td>Awesome-WAF</td>
+                                <td><a href="https://github.com/0xInfection/Awesome-WAF"
+                                        target="_blank">https://github.com/0xInfection/Awesome-WAF</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>Recon My Way</td>
+                                <td><a href="https://medium.com/@ehsahil/recon-my-way-82b7e5f62e21"
+                                        target="_blank">https://medium.com/@ehsahil/recon-my-way-82b7e5f62e21</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>Resources for BBH ~ nahamsec</td>
+                                <td><a href="https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters"
+                                        target="_blank">https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters</a>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Vulnerable Web Applications</td>
+                                <td><a href="https://www.theprohack.com/p/web-hacking-practice-list-of-vulnerable.html"
+                                        target="_blank">https://www.theprohack.com/p/web-hacking-practice-list-of-vulnerable.html</a>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Hacking Articles</td>
+                                <td><a href="https://www.hackingarticles.in/web-penetration-testing/"
+                                        target="_blank">https://www.hackingarticles.in/web-penetration-testing/</a>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Web Security Academy</td>
+                                <td><a href="https://portswigger.net/web-security"
+                                        target="_blank">https://portswigger.net/web-security</a></td>
+                            </tr>
+                            <tr>
+                                <td>Web testing info</td>
+                                <td><a href="https://ngndgnndgnadkjg.gitbooks.io/quick-ref/"
+                                        target="_blank">https://ngndgnndgnadkjg.gitbooks.io/quick-ref/</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bug Bounty Recon</td>
+                                <td><a href="https://bugbountyforum.com/tools/recon/"
+                                        target="_blank">https://bugbountyforum.com/tools/recon/</a></td>
+                            </tr>
+                            <tr>
+                                <td>Learn Web App Hacking</td>
+                                <td>
+                                    <a href="https://rmusser.net/docs/Web.html"
+                                        target="_blank">https://rmusser.net/docs/Web.html</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Web pentesting course</td>
+                                <td>
+                                    <a href="https://docs.google.com/document/d/101EsKlu41ICdeE7mEv189SS8wMtcdXfRtua0ClYjP1M/edit#heading=h.21kqiaj7paqj"
+                                        target="_blank">https://docs.google.com/document/d/101EsKlu41ICdeE7mEv189SS8wMtcdXfRtua0ClYjP1M/edit#heading=h.21kqiaj7paqj</a>
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </p>
+
+                </div>
+
+            </section>
+        </section>
+
+
+
+
+        <!--jquery and bootstrap files-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+
+        <!-- linking external script file -->
+        <script src="script.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/ui.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  html {
+    background:rgba(19,30,49,1);
+  }
+
+  /* img {
+    max-width: 100%;
+    max-height: 100%;
+} */
+  
+
+.container_ {
+    /* width: 100%;
+    height: 100%; */
+    background: rgb(33,55,82);
+    background: linear-gradient(180deg, rgba(33,55,82,1) 0%, rgba(19,30,49,1) 92%);
+    position: relative;
+   
+}
+.font_style {
+  font-family: 'Quicksand', sans-serif
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    box-shadow: -3px 0px 5px black !important;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    background: #131e31
+}
+
+.admin-create {
+  display: flex;
+  position: absolute;
+  width: 40%;
+  height: 161px;
+  top: -37px;
+  right: 54vh;
+  background: transparent;
+  z-index: 2;
+}
+
+.text-style-head {
+  font-size: 30px;
+}
+
+
+.topnav_style {
+  text-decoration: none !important; 
+  color: #a7adbb !important;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+.navbar ul {
+  color:white;
+  display: inline-flex;
+    
+}
+.navbar ul li {
+    list-style-type: none;
+    color:white;
+    display: inline-flex;
+    list-style: none;
+    margin: 0 20px 0 0;
+}
+
+.logo img {
+    width: 29px;
+    margin-left:-5px;
+}
+
+
+.navbar ul .nav_links {
+    display:flex;
+    align-items: center;
+    margin-left: 6px;
+    margin-top: 6px
+    
+}
+
+
+#margin-adj {
+    margin-left: 50px;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+
+  /* ScrollBar */
+
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px rgb(228, 0, 0); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3f3f3f; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6c757d; }
+
+
+.side_navbar {
+  z-index: 1;
+  position: relative;
+}
+
+.nav_icons {
+height: 1.3em;
+vertical-align:0 !important;
+}
+
+
+@media screen and (max-width: 800px) {
+  .text_disp {
+    display: none;
+    /* color: transparent !important; */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topnav_style {
+    margin-right: 30px;
+
+
+  }
+}
+/* @media screen and (max-width: 500px) {
+  #menuLink {
+  z-index: 1 !important;
+  }
+}
+   */
+   
+
+   /* @media screen and (min-width: 1279px) {
+    #content {
+    left: 0px
+    }
+  } */
+
+.preload {
+  --color-bg: #ddd;
+  --color-text: #1a1e24;
+  --color-text-subtle: #D76D77;
+
+  padding: 0; margin: 0;
+  width:100%;
+  height:100%;
+  min-height: 100vh;
+  background:linear-gradient(180deg, rgba(19,30,49,1) 0%, rgba(30,49,72,1) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;   
+  justify-content: center;
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --color-bg: #252a33;
+  --color-text: #eee;
+  --color-text-subtle: #a2a2a2;
+}
+
+[data-termynal] {
+  width: 750px;
+  min-height: 705.35px !important;
+  max-width: 100%;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 18px;
+  font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+  border-radius: 4px;
+  padding: 75px 45px 35px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+[data-termynal]:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* A little hack to display the window buttons in one pseudo element. */
+  background: #d9515d;
+  box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
+  
+}
+
+[data-ty] {
+  display: block;
+  line-height: 2;
+}
+
+[data-ty]:before {
+  /* Set up defaults and ensure empty lines are displayed. */
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+}
+
+[data-ty="input"]:before,
+[data-ty-prompt]:before {
+  margin-right: 0.75em;
+  color: var(--color-text-subtle);
+}
+
+[data-ty="input"]:before {
+  content: '$';
+}
+
+[data-ty][data-ty-prompt]:before {
+  content: attr(data-ty-prompt);
+}
+
+[data-ty-cursor]:after {
+  content: attr(data-ty-cursor);
+  font-family: monospace;
+  margin-left: 0.5em;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+
+/* Cursor animation */
+
+@-webkit-keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+
+
+
+button {
+  
+  background-color: #292D3E;
+  border: 1px solid #5b81d7;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 47px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+ box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+ transform: translateX(-3px);
+}
+
+#btn_continue {
+   opacity:5%;
+   color: #ffffff;
+   border-radius: 24px
+}
+
+#btn_continue:hover {
+  opacity: 100%;
+}
+
+#btn_contain {
+  position: fixed;
+  right: 26.7%;
+  bottom: 5.1%;
+}
+
+
+
+
+
+
+
+
+
+
+/* About styles */
+
+
+.flex {
+  display: flex
+}
+
+.width_250 {
+  width: 250px;
+  height: auto;
+}
+
+/* glitch elem must have absolute position */
+.glitch-img {
+  position: absolute; 
+  width : 15%; 
+  height : 21%; 
+  top: 38px; 
+  left: 39px; 
+  background-position:center;  
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -webkit-background-size:cover;
+  background-size:cover;
+  opacity : 1
+}
+/* glitch elem must have absolute position */
+.glitch-img {
+  position: absolute; 
+  width : 12%; 
+  height : 16%; 
+  top: 52px; 
+  left: 39px; 
+  background-position:center;  
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -webkit-background-size:cover;
+  background-size:cover;
+  opacity : 1
+}
+/* glitch elem must have absolute position */
+.glitch-img2 {
+  position: absolute; 
+  width : 16%; 
+  height : 19%; 
+  top: 41px; 
+  right: 56px; 
+  background-position:center;  
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -webkit-background-size:cover;
+  background-size:cover;
+  opacity : 1
+}
+
+
+.container_glitch {
+  /* position: relative;  */
+  /* margin: 1px;  */
+  width: 200px; 
+  height: auto; 
+  overflow: hidden; 
+}
+
+
+*, *:after, *:before {
+  -moz-box-sizing:border-box; 
+   box-sizing:border-box;
+}
+
+

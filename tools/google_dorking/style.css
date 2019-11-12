@@ -1,0 +1,31 @@
+body {
+
+
+    background-color: gray;
+
+}
+
+
+
+
+#btn_Container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#btn_Items {
+
+    display: block;
+    text-align: center;
+
+
+}
+
+
+button {
+
+    border-color: transparent;
+}

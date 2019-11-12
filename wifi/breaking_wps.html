@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Breaking WPS</title>
+
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Main styling sheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Linking PureCSS styling-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+        crossorigin="anonymous">
+    <!-- extra Styling for the PureCSS side navbar (z-index in styles.css) -->
+    <link rel="stylesheet" href="../css/layout/purecss/side-menu.css">
+    <link rel="stylesheet" href="../css/layout/purecss/pure-min.css">
+
+    <!-- Styling for the lock logo shine effect -->
+    <link rel="stylesheet" href="../css/shine.css">
+
+    <!-- Styling for the Main content of the page ie. videos, writeups, images etc -->
+    <link rel="stylesheet" href="../css/layout/content.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- loading google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Everything displayed on the page will be within this div container -->
+    <div class="container_">
+
+
+        <!-- Top Navbar -->
+        <section>
+            <div class="navbar" style="position: fixed;z-index: 2;">
+                <ul>
+                    <li class="test-shine"><a href="https://0xapt.duckdns.org/"><img src="../resources/bash.png"
+                                alt="bash"></a></li>
+                    <li class="nav_links hvr-grow" id="margin-adj"><a href="https://0xapt.duckdns.org/"
+                            style="margin-left: 26px;" class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/home-icon.svg" alt="home"></span>
+                            <span class="text_disp">Home</span></a></li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/tools/
+                        " class="topnav_style"><span><img class="nav_icons" src="../resources/nav_icons/wrench.svg"
+                                    alt="tools"></span> <span class="text_disp">Tools</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/hacking_resources/
+                        " class="topnav_style"><span><img class="nav_icons" src="../resources/nav_icons/open-book.svg"
+                                    alt="resources"></span> <span class="text_disp">
+                                Resources</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/video/"
+                            class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/play-button.svg" alt="videos"></span> <span
+                                class="text_disp">
+                                Videos</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--#END# Top Navbar -->
+
+
+        <!-- Side Navbar -->
+        <section class="side_navbar">
+            <div id="layout">
+                <!-- Menu toggle -->
+                <a href="#menu" id="menuLink" class="menu-link"
+                    style=" width: 56px;background-color:#131e31;opacity: 55%;padding: 15px;">
+                    <!-- Hamburger icon -->
+                    <span></span>
+                </a>
+                <!-- Side Navbar Menu Items -->
+                <div id="menu">
+                    <div class="pure-menu">
+                        <ul class="pure-menu-list" style="border: 0">
+
+                            <li class="pure-menu-item">
+                                <a href="https://0xapt.duckdns.org/wifi/" class="pure-menu-link">WiFi ~ Getting
+                                    started</a>
+                                <a href="https://0xapt.duckdns.org/wifi/breaking_wps.html" class="pure-menu-link">WiFi ~
+                                    Breaking WPS</a>
+                                <a href="https://0xapt.duckdns.org/wifi/cracking-wpa2-pixie.html"
+                                    class="pure-menu-link">WiFi ~ Cracking WPA2</a>
+                                <a href="https://0xapt.duckdns.org/wifi/rogue-ap.html" class="pure-menu-link">WiFi ~
+                                    Rogue AP</a>
+                                <a href="https://0xapt.duckdns.org/web_hacking
+                            " class="pure-menu-link">Web Application</a>
+                                <a href="https://0xapt.duckdns.org/osint/
+                            " class="pure-menu-link">OSINT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #END# Side Navbar -->
+
+
+
+
+            <!-- Parent Container of all your content-->
+            <section id="content">
+
+                <!-- Main content of the page ie. Videos, Blogs, Images etc. Div's recommended (Check out content.css to change layout/ styling)
+    EXTRA NOTE - The width and height of this container stretches automatically with your content and wraps when it hits a certain width. Everything is set to be centered. Change content.css if you want to edit these options -->
+                <div id="inner_content"
+                    style="padding-left:16% !important; padding-right:16% !important; background:  #0d1523 !important;font-family: 'Quicksand', sans-serif; font-size:21px; ">
+                    <h1 style="width: 100%">>WIFI_HACKING_</h1>
+                    <br>
+                    <h2 style="padding-top: 40px; width:100%; margin-bottom: 50px;">Breaking WPS PIN w/ BuLLy</h2>
+
+                    <img src="https://media.giphy.com/media/kHK6zyGyZ6rzW/giphy.gif" alt="reading gif"
+                        style="margin-bottom: 30px; margin-top: 23px; margin-bottom: 6%; width:60%; border: 3px white solid;box-shadow: 10px 10px 10px #000000;">
+
+                    <p style="width:100%">
+
+                        WPS stands for Wi-Fi Protected Setup and was designed to make setting a secure AP simpler for
+                        the average homeowner. First introduced
+                        in 2006, by 2011 it was discovered that it had a serious design flaw. The WPS PIN could be
+                        brute-forced rather simply.<br><br>
+
+                        With only 7 unknown digits in the PIN, there are just 9,999,999 possibilities, and most systems
+                        can attempt that many combinations in
+                        a few hours. Once the WPS PIN is discovered, the user can use that PIN to find the WPA2
+                        preshared key (password). Since a brute-force
+                        attack against a WPA2 protected AP can take hours to days, if this feature is enabled on the AP
+                        and not upgraded, it can be a much
+                        faster route to getting the PSK.<br><br>
+
+                        It's important to note, though, that new APs no longer have this vulnerability. This attack will
+                        only work on APs sold during that
+                        window of 2006 and early 2012. Since many families keep their APs for many years,
+                        there are still many of these vulnerable ones around.<br><br>
+
+                        <b></b>*For this to work, we'll need to use a compatible wireless network adapter*</b>
+
+                        <h1 style="margin-top:60px; margin-bottom:50px; width:100%;">- Step 1: Fire Up Kali -</h1><br>
+
+                        Let's start by firing our favorite hacking Linux distribution, Kali. Then open a terminal that
+                        looks like this:<br><br><br><br>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%;margin-bottom:6%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/64/21/63553116487064/0/hack-wi-fi-breaking-wps-pin-get-password-with-bully.w1456.jpg"
+                            alt="backtrack screenshot">
+
+
+                        To make certain we have some wireless connections and their designation, we can type: <br><br>
+
+                        <b style="width:100%">> iwconfig</b><br><br>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%;margin-bottom:6%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/76/10/63553116587767/0/hack-wi-fi-breaking-wps-pin-get-password-with-bully.w1456.jpg"
+                            alt="backtrack screenshot">
+
+                        As we can see, this system has a wireless connection designated wlan0. Yours may be different,
+                        so make certain to check.
+
+                        <h1 style="margin-top:70px; margin-bottom:50px; width:100%;">- Step 2: Put Your WiFi Adpater in
+                            Monitor Mode -</h1><br>
+
+                        The next step is to put your Wi-Fi adapter in monitor mode. This is similar to promiscuous mode
+                        on a wired connection.
+                        In other words, it enables us to see all the packets passing through the air past our wireless
+                        adapter. We can use one of the tools
+                        from the Aircrack-ng suite, Airmon-ng, to accomplish this task.<br><br>
+
+                        <b style="width:100%">> airmon-ng start wlan0</b><br><br>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%;margin-bottom:6%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/60/28/63553116649111/0/hack-wi-fi-breaking-wps-pin-get-password-with-bully.w1456.jpg"
+                            alt="backtrack screenshot">
+
+                        Next, we need to use Airodump-ng to see the info on the wireless AP around us.<br><br>
+
+                        <b style="width:100%">> airodump-ng mon0</b><br><br>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%;margin-bottom:6%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/27/78/63553116708080/0/hack-wi-fi-breaking-wps-pin-get-password-with-bully.w1456.jpg"
+                            alt="backtrack screenshot">
+
+                        As you can see, there are several APs visible to us. I'm interested in the first one:
+                        "Mandela2." We will need its BSSID (MAC address), its channel,
+                        and its SSID to be able to crack its WPS PIN.<br><br>
+
+                        <h1 style="margin-top:60px; margin-bottom:50px; width:100%;">- Step 3: Use airodump-ng to get
+
+                            necessary Info -</h1><br><br>
+
+                        Finally, all we need to do is to put this info into our Bully command. <br><br>
+
+                        <b style="width:100%">> bully mon0 -b 00:25:9C:97:4F:48 -e Mandela2 -c 9</b><br><br>
+
+                        Let's break down that command to see what's happening.<br><br>
+
+                        <ul style="width:100%; list-style:none">
+                            <li><b>mon0</b> is the name of the wireless adapter in monitor mode.</li>
+                            <li><b>--b 00:25:9C:97:4F:48</b> is the BSSID of the vulnerable AP.</li>
+                            <li><b>-e Mandela2</b> is the SSID of the AP.</li>
+                            <li><b>-c 9 </b>is the channel the AP is broadcasting on.</li>
+                            <br>
+                            <br>
+                        </ul>
+
+
+                        <p style="width:100%;">All of this information is available in the screen above with
+                            Airodump-ng.</p><br><br>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 4%;margin-bottom:2%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/37/72/63553116820033/0/hack-wi-fi-breaking-wps-pin-get-password-with-bully.w1456.jpg"
+                            alt="backtrack screenshot">
+
+
+                        <h1 style="margin-top:60px; margin-bottom:80px; width:100%;">- Step 4: Start Bully -</h1>
+
+
+                        <p style="width: 100%;">When we hit enter, Bully will start to try to crack the WPS PIN.</p>
+                        <br><br>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%;margin-bottom:6%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/42/11/63553116830205/0/hack-wi-fi-breaking-wps-pin-get-password-with-bully.w1456.jpg"
+                            alt="backtrack screenshot">
+
+                        Now, if this AP is vulnerable to this attack, bully will spit out the WPS PIN and the AP
+                        password within 3 to 5 hours.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </p>
+
+                </div>
+
+            </section>
+        </section>
+
+
+
+
+        <!--jquery and bootstrap files-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+
+        <!-- linking external script file -->
+        <script src="../js/script.js"></script>
+        <script src="../js/ui.js"></script>
+
+</body>
+
+</html>

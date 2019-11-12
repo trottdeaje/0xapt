@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cracking WEP</title>
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Main styling sheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Linking PureCSS styling-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+        crossorigin="anonymous">
+    <!-- extra Styling for the PureCSS side navbar (z-index in styles.css) -->
+    <link rel="stylesheet" href="../css/layout/purecss/side-menu.css">
+    <link rel="stylesheet" href="../css/layout/purecss/pure-min.css">
+
+    <!-- Styling for the lock logo shine effect -->
+    <link rel="stylesheet" href="../css/shine.css">
+
+    <!-- Styling for the Main content of the page ie. videos, writeups, images etc -->
+    <link rel="stylesheet" href="../css/layout/content.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- loading google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Everything displayed on the page will be within this div container -->
+    <div class="container_">
+
+
+        <!-- Top Navbar -->
+        <section>
+            <div class="navbar" style="position: fixed;">
+                <ul>
+                    <li class="test-shine"><a href="https://0xapt.duckdns.org/"><img src="../resources/bash.png"
+                                alt="bash"></a></li>
+                    <li class="nav_links hvr-grow" id="margin-adj"><a href="https://0xapt.duckdns.org/"
+                            style="margin-left: 26px;" class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/home-icon.svg" alt="home"></span>
+                            <span class="text_disp">Home</span></a></li>
+
+                    <li class="nav_links hvr-grow"><a href="#" class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/wrench.svg" alt="tools"></span> <span
+                                class="text_disp">Tools</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="#" class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/open-book.svg" alt="resources"></span> <span
+                                class="text_disp">
+                                Resources</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/video/"
+                            class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/play-button.svg" alt="videos"></span> <span
+                                class="text_disp">
+                                Videos</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--#END# Top Navbar -->
+
+
+        <!-- Side Navbar -->
+        <section class="side_navbar">
+            <div id="layout">
+                <!-- Menu toggle -->
+                <a href="#menu" id="menuLink" class="menu-link"
+                    style=" width: 56px;background-color:#131e31;opacity: 55%;padding: 15px;">
+                    <!-- Hamburger icon -->
+                    <span></span>
+                </a>
+                <!-- Side Navbar Menu Items -->
+                <div id="menu">
+                    <div class="pure-menu">
+                        <ul class="pure-menu-list" style="border: 0">
+
+                            <li class="pure-menu-item">
+                                <a href="https://0xapt.duckdns.org/wifi/" class="pure-menu-link">WiFi ~ Getting
+                                    started</a>
+                                <a href="https://0xapt.duckdns.org/wifi/breaking_wps.html" class="pure-menu-link">WiFi ~
+                                    Breaking WPS</a>
+                                <a href="https://0xapt.duckdns.org/wifi/cracking-wpa2-pixie.html"
+                                    class="pure-menu-link">WiFi ~ Cracking WPA2</a>
+                                <a href="https://0xapt.duckdns.org/wifi/rogue-ap.html" class="pure-menu-link">WiFi ~
+                                    Rogue AP</a>
+                                <a href="https://0xapt.duckdns.org/web_hacking
+                            " class="pure-menu-link">Web Application</a>
+                                <a href="https://0xapt.duckdns.org/osint/
+                            " class="pure-menu-link">OSINT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #END# Side Navbar -->
+
+
+
+
+            <!-- Parent Container of all your content-->
+            <section id="content">
+
+                <!-- Main content of the page ie. Videos, Blogs, Images etc. Div's recommended (Check out content.css to change layout/ styling)
+    EXTRA NOTE - The width and height of this container stretches automatically with your content and wraps when it hits a certain width. Everything is set to be centered. Change content.css if you want to edit these options -->
+                <div id="inner_content"
+                    style="padding-left:16% !important; padding-right:16% !important;background: #0d1523 !important;font-family: 'Quicksand', sans-serif;font-size: 22px;;">
+                    <h1 style="width: 100%">>WIFI_HACKING_</h1>
+                    <br>
+                    <h2 style="padding-top: 40px; width:100%; margin-bottom: 50px;">^ Cracking WEP ^</h2>
+
+                    <img src="https://media.giphy.com/media/YJ85eVpdZDy7e/giphy.gif" alt="reading gif"
+                        style="margin-bottom: 30px; margin-top: 23px; margin-bottom: 6%; width:60%;border: 3px white solid;">
+
+                    <p style="width:100%">
+
+                        When Wi-Fi was first developed and popularized in the late '90s, security was not a
+                        major concern. Unlike wired connections, anyone could simply connect to a Wi-Fi
+                        access point (AP) and steal bandwidth, or worse—sniff the traffic.<br><br>
+
+                        The first attempt at securing these access points was termed Wired Equivalent
+                        Privacy, or simply WEP. This encryption method has been around for quite a while
+                        and a number of weaknesses have been discovered. It has been largely replaced by
+                        WPA and WPA2.<br><br>
+
+                        Despite these known weaknesses, there are still a significant number of these legacy
+                        APs in use. I was recently (July 2013) working at a major U.S. Department of Defense
+                        contractor in Northern Virginia, and in that building, probably a quarter of the
+                        wireless APs were still using WEP!<br><br>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%; margin-bottom:6%; border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffthmb.tqn.com%2F55b_4EdpJWd2nwIx3w6JvKqdq5Q%3D%2F5001x3335%2Ffilters%3Afill(auto%2C1)%2Fwireless-router-57ee8cea5f9b586c353f3e9f.jpg&f=1&nofb=1"
+                            alt="router">
+
+
+                        Apparently, a number of home users and small businesses bought their APs years ago, have never
+                        upgraded,
+                        and don't realize or don't care about its lack of security.<br><br>
+
+                        The flaws in WEP make it susceptible to various statistical cracking techniques. WEP uses RC4
+                        for encryption,
+                        and RC4 requires that the initialization vectors (IVs) be random.
+                        The implementation of RC4 in WEP repeats that IV about every 6,000 frames.
+                        If we can capture enough of the IVs, we can decipher the key!<br><br>
+
+                        Let's take a look at cracking WEP with the best wireless hacking tool available, aircrack-ng!
+
+                        Hacking wireless is one of my personal favorites!
+
+                        <h1 style="margin-top:60px; margin-bottom:50px; width:100%;">- Step 1: Open aircrack-ng in Kali
+                            Linux -</h1><br>
+
+                        Let's start by firing up BackTrack and make certain that our wireless adapter is recognized and
+                        operational.<br><br>
+
+                        <b style="width:100%">> iwconfig</b>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 4%;margin-bottom:6%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/original/59/46/63514407561351/0/635144075613515946.jpg"
+                            alt="backtrack screenshot">
+
+                        Let's note that our wireless adapter is recognized by BackTrack and is renamed wlan0. Yours may
+                        be wlan1 or wlan2.<br><br>
+
+
+                        <h1 style="margin-top:60px; margin-bottom:50px; width:100%;">- Step 2: Put Wireless Adapter
+                            into Monitor Mode -</h1><br>
+
+                        Next, we need to put the wireless adapter into monitor or promiscuous mode. We can do that by
+                        typing:<br><br>
+
+                        <b style="width:100%">> airmon-ng start wlan0</b>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%;margin-bottom:2%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/61/43/63514407572583/0/hack-wi-fi-cracking-wep-passwords-with-aircrack-ng.w1456.jpg"
+                            alt="backtrack screenshot">
+
+
+                        <h1 style="margin-top:60px; margin-bottom:50px; width:100%;">- Step 3: Start Capturing Traffic -
+                        </h1><br>
+
+                        We now need to start capturing traffic. We do this by using the airmon-ng command with the
+                        monitoring interface, mon0.<br><br>
+
+                        <b style="width:100%">> airodump-ng mon0</b><br><br><br>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%; margin-bottom:6%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/23/31/63514407583285/0/hack-wi-fi-cracking-wep-passwords-with-aircrack-ng.w1456.jpg"
+                            alt="backtrack screenshot">
+
+
+                        As we can see, we are now able to see all the APs and clients within our range!<br><br>
+
+                        <h1 style="margin-top:60px; margin-bottom:50px; width:100%;">- Step 4: Start a Specific Capture
+                            on
+                            the AP -</h1><br>
+
+                        As you can see from the screenshot above, there are several APs with WEP encryption. Let's
+                        target the second one
+                        from the top with the ESSID of "wonderhowto". Let's copy the BSSID from this AP and begin a
+                        capture on that AP<br><br>
+
+                        <b style="width:100%">> airodump-ng --bssid 00:09:5B:6F:64:1E -c 11 -w WEPcrack mon0</b><br><br>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%;margin-bottom:6%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/05/04/63514407593160/0/hack-wi-fi-cracking-wep-passwords-with-aircrack-ng.w1456.jpg"
+                            alt="backtrack screenshot">
+
+
+                        This will start capturing packets from the SSID "wonderhowto" on channel 11 and write them to
+                        file WEPcrack in the pcap format.
+                        This command alone will now allow us to capture packets in order to crack the
+                        WEP key, if we are VERY patient.<br><br>
+
+                        But we're not patient, we want it now! We want to crack this key ASAP, and to do that, we will
+                        need to inject packets into the AP.<br><br>
+
+                        We now need to wait for someone to connect to the AP so that we can get the MAC address from
+                        their network card. When we have their MAC
+                        address, we can spoof their MAC and inject packets into their AP. As we can see at the bottom of
+                        the screenshot, someone
+                        has connected to the "wonderhowto" AP. Now we can hasten our attack!<br><br>
+
+
+                        <h1 style="margin-top:60px; margin-bottom:50px; width:100%;">- Step 5: Inject ARP Traffic -</h1>
+                        <br>
+
+                        To spoof their MAC and inject packets, we can use the aireplay-ng command. We need the BSSID of
+                        the AP and the MAC address of the
+                        client who connected to the AP. We will be capturing an ARP packet and then replaying that ARP
+                        thousands of times
+                        in order to generate the IVs that we need to crack WEP.<br><br>
+
+                        <b style="width:100%">> aireplay-ng -3 -b 00::09:58:6F:64:1E -h 44:60:57:c8:58:A0
+                            mon0</b><br><br>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%;margin-bottom:6%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/86/85/63514407603424/0/hack-wi-fi-cracking-wep-passwords-with-aircrack-ng.w1456.jpg"
+                            alt="backtrack screenshot">
+
+                        Now when we inject the ARPs into the AP, we will capture the IVs that are generated
+                        in our airodump file WEPcrack.<br><br>
+                        <h1 style="margin-top:60px; margin-bottom:50px; width:100%;">- Step 6: Crack the Password -</h1>
+                        <br>
+
+                        Once we have several thousand IVs in our WEPcrack file, all we need to do is run that file
+                        against aircrack-ng, such as this:<br><br>
+
+                        <b style="width:100%">> aircrack-ng WEPcrack-01.cap</b><br><br>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%;margin-bottom:6%; border: 3px white solid;"
+                            src="https://img.wonderhowto.com/img/28/74/63514407614173/0/hack-wi-fi-cracking-wep-passwords-with-aircrack-ng.w1456.jpg"
+                            alt="backtrack screenshot">
+
+                        If we have enough IVs, aircrack-ng will display the key on our screen, usually in hexadecimal
+                        format. Simply take that hex key
+                        and apply it when logging into the remote AP and you have free wireless!
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </p>
+
+                </div>
+
+            </section>
+        </section>
+
+
+
+
+        <!--jquery and bootstrap files-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+
+        <!-- linking external script file -->
+        <script src="../js/script.js"></script>
+        <script src="../js/ui.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Hacking</title>
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- Main styling sheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Linking PureCSS styling-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+        crossorigin="anonymous">
+    <!-- extra Styling for the PureCSS side navbar (z-index in styles.css) -->
+    <link rel="stylesheet" href="../css/layout/purecss/side-menu.css">
+    <link rel="stylesheet" href="../css/layout/purecss/pure-min.css">
+
+    <!-- Styling for the lock logo shine effect -->
+    <link rel="stylesheet" href="../css/shine.css">
+
+    <!-- Styling for the Main content of the page ie. videos, writeups, images etc -->
+    <link rel="stylesheet" href="../css/layout/content.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- loading google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+
+
+    <!-- Style for table -->
+
+    <style>
+        table {
+
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid white;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: blue;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <!-- Everything displayed on the page will be within this div container -->
+    <div class="container_">
+
+
+        <!-- Top Navbar -->
+        <section>
+            <div class="navbar" style="position: fixed;z-index: 2;">
+                <ul>
+                    <li class="test-shine"><a href="https://0xapt.duckdns.org/"><img src="../resources/bash.png"
+                                alt="bash"></a></li>
+                    <li class="nav_links hvr-grow" id="margin-adj"><a href="https://0xapt.duckdns.org/"
+                            style="margin-left: 26px;" class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/home-icon.svg" alt="home"></span>
+                            <span class="text_disp">Home</span></a></li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/tools/
+                        " class="topnav_style"><span><img class="nav_icons" src="../resources/nav_icons/wrench.svg"
+                                    alt="tools"></span> <span class="text_disp">Tools</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/hacking_resources/
+                        " class="topnav_style"><span><img class="nav_icons" src="../resources/nav_icons/open-book.svg"
+                                    alt="resources"></span> <span class="text_disp">
+                                Resources</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/video/"
+                            class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/play-button.svg" alt="videos"></span> <span
+                                class="text_disp">
+                                Videos</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--#END# Top Navbar -->
+
+
+        <!-- Side Navbar -->
+        <section class="side_navbar">
+            <div id="layout">
+                <!-- Menu toggle -->
+                <a href="#menu" id="menuLink" class="menu-link"
+                    style=" width: 56px;background-color:#131e31;opacity: 55%;padding: 15px;">
+                    <!-- Hamburger icon -->
+                    <span></span>
+                </a>
+                <!-- Side Navbar Menu Items -->
+                <div id="menu">
+                    <div class="pure-menu">
+                        <ul class="pure-menu-list" style="border: 0">
+
+                            <li class="pure-menu-item">
+                                <a href="https://0xapt.duckdns.org/wifi/" class="pure-menu-link">WiFi ~ Getting
+                                    started</a>
+                                <a href="https://0xapt.duckdns.org/wifi/breaking_wps.html" class="pure-menu-link">WiFi ~
+                                    Breaking WPS</a>
+                                <a href="https://0xapt.duckdns.org/wifi/cracking-wpa2-pixie.html"
+                                    class="pure-menu-link">WiFi ~ Cracking WPA2</a>
+                                <a href="https://0xapt.duckdns.org/wifi/rogue-ap.html" class="pure-menu-link">WiFi ~
+                                    Rogue AP</a>
+                                <a href="https://0xapt.duckdns.org/web_hacking
+                            " class="pure-menu-link">Web Application</a>
+                                <a href="https://0xapt.duckdns.org/osint/
+                            " class="pure-menu-link">OSINT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #END# Side Navbar -->
+
+
+
+
+            <!-- Parent Container of all your content-->
+            <section id="content">
+
+                <!-- Main content of the page ie. Videos, Blogs, Images etc. Div's recommended (Check out content.css to change layout/ styling)
+    EXTRA NOTE - The width and height of this container stretches automatically with your content and wraps when it hits a certain width. Everything is set to be centered. Change content.css if you want to edit these options -->
+                <div id="inner_content"
+                    style="padding-left:10% !important; padding-right:10% !important; background:  #0d1523 !important">
+                    <h1 style="width: 100%;font-family: 'Quicksand', sans-serif">>Web_Hacking_</h1>
+                    <br>
+
+                    <h3 style="width:100%;text-align: center; margin-top: 50px; font-family: 'Quicksand', sans-serif">-
+                        OWASP TOP 10 -</h3>
+
+                    <img style="width: 40%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; border: 3px white solid;"
+                        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F31.media.tumblr.com%2F7d27aee8a3e45be47e6212da287fe477%2Ftumblr_n7zukidWwU1qze3hdo1_r1_500.gif&f=1&nofb=1"
+                        alt="8bit wtachdogs _image">
+
+
+
+                    <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+
+                        Web application Hacking is the art of finding, and exploiting vulnerabilties within
+                        a web appliction. Whether it is finding vulnerabilties that are server side, or client side.
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px black solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhackeracademy.uk%2Fwp-content%2Fuploads%2F2018%2F11%2Fethical_hacking.jpg&f=1&nofb=1"
+                            alt="Security Image">
+
+                        There are many different types of vulnerabilties that we have to look out for when testing a
+                        web appliction. OWASP (the OPEN Web Application Security Project) creates standards (updated
+                        regularly)
+                        that they recommend everyone to know and keep on top of. These are Known as the <b>OWASP TOP
+                            10</b>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px black solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.twistlock.com%2Fwp-content%2Fuploads%2F2018%2F01%2Fowasp-1024x580.jpeg&f=1&nofb=1"
+                            alt="Security Image">
+
+
+                        <table align="center">
+                            <tr>
+                                <th>Attack</th>
+                                <th>Type</th>
+                            </tr>
+                            <tr>
+                                <td>A1</td>
+                                <td>Injection </td>
+
+                            </tr>
+                            <tr>
+                                <td>A2</td>
+                                <td>Broken Authentication</td>
+
+                            </tr>
+                            <tr>
+                                <td>A3</td>
+                                <td>Sensetive Data Exposure</td>
+
+                            </tr>
+                            <tr>
+                                <td>A4</td>
+                                <td>XML External Entities (XXE)</td>
+
+                            </tr>
+                            <tr>
+                                <td>A5</td>
+                                <td>Broken Authentication Control</td>
+
+                            </tr>
+                            <tr>
+                                <td>A6</td>
+                                <td>Security Misconfiguration</td>
+                            </tr>
+                            <tr>
+                                <td>A7</td>
+                                <td>Cross-Site Scripting</td>
+                            </tr>
+                            <tr>
+                                <td>A8</td>
+                                <td>Insecure Deserialization</td>
+                            </tr>
+                            <tr>
+                                <td>A9</td>
+                                <td>Using Components with known Vulnerabilites</td>
+                            </tr>
+                            <tr>
+                                <td>A10</td>
+                                <td>Insuffiecient logging & Monitoring</td>
+                            </tr>
+                        </table>
+
+                        <h1 style="width:100%; margin-top:80px; margin-bottom:40px; ">A1 Injection</h1>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.rewindantiagingmiami.com%2Fwp-content%2Fuploads%2F2016%2F01%2Fvitamin-b12-injection-miami.jpg&f=1&nofb=1"
+                            alt="Security Image">
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 30px; font-size: 21px;">
+                            Injection flaws, such as SQL injection, LDAP injection, and CRLF injection, Command
+                            injection
+                            occur when an attacker
+                            sends untrusted data to an interpreter that is executed as a command without proper
+                            authorization.
+                        </p>
+
+                        <h5 style="width:100%; margin-top:10px; margin-bottom:10px; font-family: 'Quicksand';">
+                            -Mitigation-</h5>
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 10px; font-size: 21px;">
+                            Application security testing can easily detect injection flaws. Developers should use
+                            parameterized
+                            queries when coding to prevent injection flaws.
+                        </p>
+
+
+
+
+
+
+                        <h1 style="width:100%; margin-top:80px; margin-bottom:40px; ">A2 Broken Authentication</h1>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--L-tqKLNm--%2Fc_fill%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600%2Fpwl9mwg0qu5vdagwstde.jpg&f=1&nofb=1"
+                            alt="Security Image">
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 30px; font-size: 21px;">
+                            Incorrectly configured user and session authentication could allow attackers to compromise
+                            passwords,
+                            keys, or session tokens, or take control of users’ accounts to assume their identities.
+                        </p>
+
+                        <h5 style="width:100%; margin-top:10px; margin-bottom:10px; font-family: 'Quicksand';">
+                            -Mitigation-</h5>
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 10px; font-size: 21px;">
+                            Multi-factor authentication, such as FIDO or dedicated apps, reduces the risk of compromised
+                            accounts.
+                        </p>
+
+
+
+
+
+                        <h1 style="width:100%; margin-top:80px; margin-bottom:40px; ">A3 Sensitive Data Exposure</h1>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftctechcrunch2011.files.wordpress.com%2F2016%2F08%2Fcyber-security-data-phone1.png%3Fw%3D1024%26h%3D576&f=1&nofb=1"
+                            alt="Sensitive Data Exposure">
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 30px; font-size: 21px;">
+                            Applications and APIs that don’t properly protect sensitive data such as financial data,
+                            usernames
+                            and passwords, or health information, could enable attackers to access such information to
+                            commit
+                            fraud or steal identities.
+                        </p>
+
+                        <h5 style="width:100%; margin-top:10px; margin-bottom:10px; font-family: 'Quicksand';">
+                            -Mitigation-</h5>
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 10px; font-size: 21px;">
+                            Encryption of data at rest and in transit can help you comply with data protection
+                            regulations.
+                        </p>
+
+
+
+
+
+
+                        <h1 style="width:100%; margin-top:80px; margin-bottom:40px; ">A4 XXE (XML External Entities)
+                        </h1>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fspanning.com%2Fwp-content%2Fuploads%2F2019%2F09%2FXML-external-entity-attack-example.png&f=1&nofb=1"
+                            alt="XXE">
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 30px; font-size: 21px;">
+                            Poorly configured XML processors evaluate external entity references within XML documents.
+                            Attackers can use external entities for attacks including remote code execution, and
+                            to disclose internal files and SMB file shares.
+                        </p>
+
+                        <h5 style="width:100%; margin-top:10px; margin-bottom:10px; font-family: 'Quicksand';">
+                            -Mitigation-</h5>
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 10px; font-size: 21px;">
+                            Static application security testing (SAST) can discover this issue by inspecting
+                            dependencies and configuration.
+                        </p>
+
+
+
+
+
+
+                        <h1 style="width:100%; margin-top:80px; margin-bottom:40px; ">A5 Broken Access Contorl
+                        </h1>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwealthfactory.com%2Farticles%2Fwp-content%2Fuploads%2F2017%2F09%2Fbroken-lock.jpg&f=1&nofb=1"
+                            alt="broken lock">
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 30px; font-size: 21px;">
+                            Improperly configured or missing restrictions on authenticated users allow them to access
+                            unauthorized functionality or data, such as accessing other users’ accounts, viewing
+                            sensitive documents,
+                            and modifying data and access rights.
+                        </p>
+
+                        <h5 style="width:100%; margin-top:10px; margin-bottom:10px; font-family: 'Quicksand';">
+                            -Mitigation-</h5>
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 10px; font-size: 21px;">
+                            Penetration testing is essential for detecting non-functional access controls; other testing
+                            methods only
+                            detect where access controls are missing.
+                        </p>
+
+
+
+
+
+
+                        <h1 style="width:100%; margin-top:80px; margin-bottom:40px; ">A6 Security Misconfiguration
+                        </h1>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcodedx.com%2Fwp-content%2Fuploads%2F2014%2F11%2Fmisconfiguration-blog-image.jpg&f=1&nofb=1"
+                            alt="broken lock">
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 30px; font-size: 21px;">
+                            This risk refers to improper implementation of controls intended to keep application data
+                            safe, such as
+                            misconfiguration of security headers, error messages containing sensitive information
+                            (information leakage), and not patching or upgrading systems, frameworks, and components.
+                        </p>
+
+                        <h5 style="width:100%; margin-top:10px; margin-bottom:10px; font-family: 'Quicksand';">
+                            -Mitigation-</h5>
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 10px; font-size: 21px;">
+                            Dynamic application security testing (DAST) can detect misconfigurations, such as leaky
+                            APIs, Default Creds.
+                        </p>
+
+
+
+
+
+
+                        <h1 style="width:100%; margin-top:80px; margin-bottom:40px; ">A7 Cross-Site Scripting
+                        </h1>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvitalflux.com%2Fwp-content%2Fuploads%2F2018%2F01%2Fxss-attack.png&f=1&nofb=1"
+                            alt="xss diagram">
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 30px; font-size: 21px;">
+                            Cross-site scripting (XSS) flaws give attackers the capability to inject client-side scripts
+                            into the application, for example, to redirect users to malicious websites.
+                        </p>
+
+                        <h5 style="width:100%; margin-top:10px; margin-bottom:10px; font-family: 'Quicksand';">
+                            -Mitigation-</h5>
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 10px; font-size: 21px;">
+                            Developer training complements security testing to help programmers prevent cross-site
+                            scripting
+                            with best coding best practices, such as encoding data and input validation.
+                        </p>
+
+
+
+
+
+
+
+                        <h1 style="width:100%; margin-top:80px; margin-bottom:40px; ">A8 Insecure Deserialization
+                        </h1>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.slidesharecdn.com%2Fcloudapplicationsecurity-180122161417%2F95%2Fcloud-application-security-ccsp-domain-4-33-638.jpg%3Fcb%3D1516637789&f=1&nofb=1"
+                            alt="insecure deserialization">
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 30px; font-size: 21px;">
+                            Insecure deserialization flaws can enable an attacker to execute code in the application
+                            remotely,
+                            tamper or delete serialized (written to disk) objects, conduct injection attacks, and
+                            elevate privileges.
+                        </p>
+
+                        <h5 style="width:100%; margin-top:10px; margin-bottom:10px; font-family: 'Quicksand';">
+                            -Mitigation-</h5>
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 10px; font-size: 21px;">
+                            Application security tools can detect deserialization flaws but penetration testing is
+                            frequently needed to validate the problem.
+                        </p>
+
+
+
+
+
+
+
+                        <h1 style="width:100%; margin-top:80px; margin-bottom:40px; ">A9 Using Components With Known
+                            Vulnerabilites
+                        </h1>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px white solid;"
+                            src="https://i.gyazo.com/497bdfe7ffa255596bcfbf575e04b966.png" alt="rejetto exploit">
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 30px; font-size: 21px;">
+                            Developers frequently don’t know which open source and third-party components are in their
+                            applications, making
+                            it difficult to update components when new vulnerabilities are discovered. Attackers can
+                            exploit an insecure component
+                            to take over the server or steal sensitive data.
+                        </p>
+
+                        <h5 style="width:100%; margin-top:10px; margin-bottom:10px; font-family: 'Quicksand';">
+                            -Mitigation-</h5>
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 10px; font-size: 21px;">
+                            Software composition analysis conducted at the same time as static analysis can identify
+                            insecure versions of components.
+                        </p>
+
+
+
+
+                        <h1 style="width:100%; margin-top:80px; margin-bottom:40px; ">A10 Insufficient Logging and
+                            Monitoring
+                        </h1>
+
+                        <img style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 3%; border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thecybersecurityexpert.com%2Fwp-content%2Fuploads%2F2017%2F03%2F05_wpscan_apache_logs.png&f=1&nofb=1"
+                            alt="apache logs">
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 30px; font-size: 21px;">
+                            The time to detect a breach is frequently measured in weeks or months. Insufficient logging
+                            and ineffective integration
+                            with security incident response systems allow attackers to pivot to other systems and
+                            maintain persistent threats.
+                        </p>
+
+                        <h5 style="width:100%; margin-top:10px; margin-bottom:10px; font-family: 'Quicksand';">
+                            -Mitigation-</h5>
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 10px; font-size: 21px;">
+                            Think like an attacker and use pen testing to find out if you have sufficient monitoring;
+                            examine your logs after pen testing.
+                        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                    </p>
+
+                </div>
+
+            </section>
+        </section>
+
+
+
+
+        <!--jquery and bootstrap files-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+
+        <!-- linking external script file -->
+        <script src="script.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/ui.js"></script>
+
+</body>
+
+</html>

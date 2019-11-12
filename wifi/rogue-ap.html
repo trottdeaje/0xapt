@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rouge Access Point</title>
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Main styling sheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Linking PureCSS styling-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+        crossorigin="anonymous">
+    <!-- extra Styling for the PureCSS side navbar (z-index in styles.css) -->
+    <link rel="stylesheet" href="../css/layout/purecss/side-menu.css">
+    <link rel="stylesheet" href="../css/layout/purecss/pure-min.css">
+
+    <!-- Styling for the lock logo shine effect -->
+    <link rel="stylesheet" href="../css/shine.css">
+
+    <!-- Styling for the Main content of the page ie. videos, writeups, images etc -->
+    <link rel="stylesheet" href="../css/layout/content.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- loading google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Everything displayed on the page will be within this div container -->
+    <div class="container_">
+
+
+        <!-- Top Navbar -->
+        <section>
+            <div class="navbar" style="position: fixed;z-index: 2;">
+                <ul>
+                    <li class="test-shine"><a href="https://0xapt.duckdns.org/"><img src="../resources/bash.png"
+                                alt="bash"></a></li>
+                    <li class="nav_links hvr-grow" id="margin-adj"><a href="https://0xapt.duckdns.org/"
+                            style="margin-left: 26px;" class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/home-icon.svg" alt="home"></span>
+                            <span class="text_disp">Home</span></a></li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/tools/
+                        " class="topnav_style"><span><img class="nav_icons" src="../resources/nav_icons/wrench.svg"
+                                    alt="tools"></span> <span class="text_disp">Tools</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/hacking_resources/
+                        " class="topnav_style"><span><img class="nav_icons" src="../resources/nav_icons/open-book.svg"
+                                    alt="resources"></span> <span class="text_disp">
+                                Resources</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/video/"
+                            class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/play-button.svg" alt="videos"></span> <span
+                                class="text_disp">
+                                Videos</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--#END# Top Navbar -->
+
+
+        <!-- Side Navbar -->
+        <section class="side_navbar">
+            <div id="layout">
+                <!-- Menu toggle -->
+                <a href="#menu" id="menuLink" class="menu-link"
+                    style=" width: 56px;background-color:#131e31;opacity: 55%;padding: 15px;">
+                    <!-- Hamburger icon -->
+                    <span></span>
+                </a>
+                <!-- Side Navbar Menu Items -->
+                <div id="menu">
+                    <div class="pure-menu">
+                        <ul class="pure-menu-list" style="border: 0">
+
+                            <li class="pure-menu-item">
+                                <a href="https://0xapt.duckdns.org/wifi/" class="pure-menu-link">WiFi ~ Getting
+                                    started</a>
+                                <a href="https://0xapt.duckdns.org/wifi/breaking_wps.html" class="pure-menu-link">WiFi ~
+                                    Breaking WPS</a>
+                                <a href="https://0xapt.duckdns.org/wifi/cracking-wpa2-pixie.html"
+                                    class="pure-menu-link">WiFi ~ Cracking WPA2</a>
+                                <a href="https://0xapt.duckdns.org/wifi/rogue-ap.html" class="pure-menu-link">WiFi ~
+                                    Rogue AP</a>
+                                <a href="https://0xapt.duckdns.org/web_hacking
+                            " class="pure-menu-link">Web Application</a>
+                                <a href="https://0xapt.duckdns.org/osint/
+                            " class="pure-menu-link">OSINT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #END# Side Navbar -->
+
+
+
+
+            <!-- Parent Container of all your content-->
+            <section id="content">
+
+                <!-- Main content of the page ie. Videos, Blogs, Images etc. Div's recommended (Check out content.css to change layout/ styling)
+    EXTRA NOTE - The width and height of this container stretches automatically with your content and wraps when it hits a certain width. Everything is set to be centered. Change content.css if you want to edit these options -->
+                <div id="inner_content"
+                    style="padding-left:10% !important; padding-right:10% !important;background:  #0d1523 !important">
+                    <h1 style="width: 100%; font-family: 'Quicksand';">>WIFI_HACKING_</h1>
+                    <br>
+                    <h2 style="padding-top: 40px; width:100%; margin-bottom: 50px;font-family: 'Quicksand';">//Rogue
+                        Access Point\\</h2>
+
+                    <img src="http://giphygifs.s3.amazonaws.com/media/dG7ZiL6ImLyNO/giphy.gif" alt="reading gif"
+                        style="margin-bottom: 30px; margin-top: 23px; margin-bottom: 4%; border: 3px white solid;box-shadow: 10px 10px 10px #000000;">
+
+                    <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+
+                        Humans are always the weakest link when it comes to security. It's always the better option than
+                        trying to bypass any type of firewall.
+                        Here is how an attacker can gain your wifi password.<br><br>
+
+                        How often would you say that you update the firmware to your router? If you have no
+                        idea what that even means, then you're a perfect target for an attacker. When you're
+                        connected to your wireless network, an attacker could see what wireless WAP you are
+                        connected to by it's ESSID (Mac Address -> a special ID given to PCB's after being
+                        manufactured). Once they have that discoverd, they'll attempt to create a Rouge AP.
+                        A Rouge AP is an AP (Access Point) created by the attacker to replicate the AP that
+                        you are connected on. <br><br>
+
+                        They'll Duplicate the SSID (name of your WAP: "My wireless network"), and send a bunch of
+                        Deauthentication
+                        Packets to your router, forcing you off of your network. And since they've basically recreated
+
+                        your WAP, and you can't connect to your original "My wireless network" due to being kicked from
+
+                        the attacker, your device is automatically trying to connect back to it, but will end up
+                        connecting
+                        to the attackers "My wireless network" WAP instead.<br><br><br>
+
+                        <img style="width: 60%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%; margin-bottom: 6%;  border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-69xqD0t3Ki4%2FXE617pd4TBI%2FAAAAAAAAN_o%2Fq0JgWyWLl-EEUD2D1s36POVMrK_IwKFywCLcBGAs%2Fs1600%2FEvil%252BTwin%252BAttack%252Bmin.png&f=1&nofb=1"
+                            alt="airodump-ng">
+
+
+                        Why does this happen? It's the same reason why your phone will automatically connect to your
+                        wifi
+                        as soon as you get home without having to manually recconnect to the WAP. Your phone is
+                        constanly
+                        shouting out all previous WAP's that its been connected to to try and get an answer back, to
+
+                        successfully establish a connection (Handshake)<br><br><br>
+
+
+                        <img style="width: 60%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%; margin-bottom: 6%;  border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_Za6UPEUpjR4%2FTSyv7XjKnaI%2FAAAAAAAABKY%2Fw4kTeCHyxqs%2Fs1600%2Fwepcrack02.png&f=1&nofb=1"
+                            alt="airodump-ng">
+
+
+
+                        Once the vitcim is connected to their WAP, they'll have set up a web server that may look like
+                        you
+                        routers settings page (if they can find the manufacturer from the MAC address), They'll have you
+                        come
+                        to a page; If you have a TP-Link router, it that may look like this:<br><br>
+
+                        <img style="width: 80%; display: block; margin-left: auto; margin-right: auto; margin-top: 1%; margin-bottom: 4%;  border: 3px white solid;"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FaLNCv2EohEQ%2Fmaxresdefault.jpg&f=1&nofb=1"
+                            alt="tplink login page">
+
+                        But imagine having an extra message above the login stating: "Firmware for your device is
+                        outdated! Please
+                        Login to Install Updates." and without hesitation, you enter your credentials, sending your wifi
+                        password to the attacker.<br><br>
+
+                        Let's look at how a similar attack can be done: <br><br><br><br>
+
+                        <h1 style="font-family: 'Quicksand';">Build a Pumpkin Pi -- The Rouge AP & MITM Framework That
+                            Fits in Your Pocket</h1>
+                        <br><br><br>
+
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+                            A man-in-the-middle attack places you between your target and the internet, pretending to be
+                            a
+                            Wi-Fi network while secretly
+                            inspecting every packet that flows through the connection. The WiFi-Pumpkin is a rogue AP
+                            framework to easily create
+                            these fake networks, all while forwarding legitimate traffic to and from the unsuspecting
+                            target.<br><br>
+
+                            Today, we'll learn to set up this framework on a low-cost Raspberry Pi running Kali Linux.
+                            You
+                            may want to look into getting
+                            a Raspberry Pi 3 kit or Raspberry Pi 3 B+ kit for this guide. If you already have one,
+                            great,
+                            let's go!<br><br>
+
+                            On the Raspberry Pi 3 running Kali Rolling, some Kali Linux tools can be broken out into
+                            standalone, almost disposable devices.
+                            One perfect example is the WiFi-Pumpkin, an attack framework for creating rogue access
+                            points to
+                            stage man-in-the-middle (MitM) attacks.
+                            This allows an attacker to lure victims to their evil access point and begin monitoring
+                            internet
+                            traffic, effectively
+                            seizing control over the flow of data to any connected victims.<br><br>
+
+                            <img style="width: 60%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; margin-bottom: 4%;  border: 3px white solid;"
+                                src="https://img.wonderhowto.com/img/40/17/63632814052039/0/build-pumpkin-pi-rogue-ap-mitm-framework-fits-your-pocket.w1456.jpg"
+                                alt="raspberry pi">
+
+                        </p>
+                        <h2 style="margin-top:30px;font-family: 'Quicksand';">When to Use the WiFi Pumpkin</h2>
+                        <br><br><br>
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+                            The WiFi-Pumpkin is a great tool to use when you can bridge an existing Ethernet or Wi-Fi
+                            connection, serving
+                            internet access to anyone willing to connect to an open network without asking too many
+                            questions. It comes stuffed
+                            with features, including rogue Wi-Fi access points, deauth attacks on client APs, a probe
+                            request and credentials
+                            monitor, transparent proxy, Windows update attack, phishing manager, ARP Poisoning, DNS
+                            Spoofing, Pumpkin-Proxy,
+                            and image capture on the fly.<br><br>
+
+                            Wireless probe frames can reveal networks a phone or laptop is probing for. One way we can
+                            use
+                            the WiFi-Pumpkin
+                            is to monitor probe frames and create a network in response. We can use the WiFi-Pumpkin to
+                            conduct a "Karma"
+                            attack and create a network with the same SSID that the target device is expecting,
+                            or has connected to before.<br><br>
+
+                            The name of your network will have a significant effect on how people interact with it. If
+                            you
+                            are in a crowd,
+                            creating a network with names like "Starbucks" can cause a startling number of devices to
+                            connect to you in under
+                            a minute. Be creative in how you trick users into connecting to your evil AP. When you want
+                            precision control over
+                            the various elements of a man-in-the-middle attack, the WiFi-Pumpkin's easy GUI is
+                            straightforward
+                            enough for most beginners to grasp.<br><br><br><br>
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/tIM-kdmKhnE"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe><br><br><br>
+
+                        </p>
+
+                        <h2 style="margin-top:20px; width:100%;font-family: 'Quicksand'; ">What you'll need to get
+                            started</h2><br><br>
+
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+
+                            The setup to create a WiFi-Pumpkin is minimal and requires only a few components. <br><br>To
+                            put
+                            this together,
+                            you'll need the following:<br><br>
+
+                            <ul style="width:100%; list-style:none;font-family: 'Quicksand';font-size: 21px;"><b>
+                                    <li>- Wireless network adapter -</li>
+                                    <li>- Ethernet cable -</li>
+                                    <li>- Raspberry Pi 3 or 3 B+ -</li>
+                                    <li>- microSD card -</li>
+                                    <li>- Power source -</li>
+                                    <li>- USB keyboard/mouse interface -</li>
+                                    <li>- SD card adapter -</li>
+                                    <li>- Laptop to load files on the SD card -</li>
+                                </b></ul>
+
+                            <img style="width: 60%; display: block; margin-left: auto; margin-right: auto; margin-top: 4%;  border: 3px white solid"
+                                src="https://img.wonderhowto.com/img/03/09/63632813078680/0/build-pumpkin-pi-rogue-ap-mitm-framework-fits-your-pocket.w1456.jpg"
+                                alt="raspberry pi">
+
+                        </p>
+
+
+                        <h1 style="margin-top:60px; margin-bottom:50px; width:100%;font-family: 'Quicksand';">Installing
+                            & Running WiFi-Pumpkin
+                            (Kali Linux)</h1>
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+
+                            As before any new install, ensure that your system is fully updated. WiFi-Pumpkin will
+                            require
+                            that you have an up-to-date Python installed on your machine.<br><br><br>
+
+                            <b style="width:100%;"> > sudo apt-get update</b><br><br>
+
+                            WiFi-Pumpkin has a number of dependencies you will need to have installed before it can run
+                            smoothly. Install the following if you don't
+                            already have them on your Kali-Pi.
+
+                        </p>
+
+                        <h2 style="margin-top:60px; margin-bottom:50px; width:100%;font-family: 'Quicksand';">- Step 1:
+                            Install Dependencies -</h2>
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+
+
+                            Python's package manager, Pip, will help us manage the rest of the installation. To install
+                            it
+                            on<br> Kali Linux, run the following commands.<br><br><br>
+
+                            <b style="width:100%;"> > sudo apt-get install -y python-pip</b><br><br>
+
+                            The next three dependencies will allow WiFi-Pumpkin to verify certificates, add HTTP layer
+                            support, and intercept and inspect traffic flows.
+                            Install each as shown below.<br><br><br>
+
+                            <ul style="width:100%; list-style:none;font-size: 21px;font-family: 'Quicksand';"><b>
+                                    <li>> pip install service_identity</li>
+                                    <li>> pip install scapy_http</li>
+                                    <li>> sudo apt-get install mitmproxy</li>
+
+                                </b></ul>
+
+                        </p>
+
+                        <h2 style="margin-top:60px; margin-bottom:50px; width:100%; font-family: 'Quicksand'; ">- Step
+                            2:
+                            Install WiFi-Pumpkin -</h2>
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+
+                            Download WiFi-Pumpkin by cloning the GitHub repository:<br><br>
+
+                            <b style="width:100%;"> > sudo apt-get install -y python-pip</b><br><br>
+
+                            Then go inside the folder:<br><br>
+
+                            <b style="width:100%;"> > cd WiFi-Pumpkin</b><br><br>
+
+                            And change the permission of the installer file:<br><br>
+
+                            <b style="width:100%;"> > chmod +x installer.sh</b><br><br>
+
+                            And then run the installer by entering the following:<br><br>
+
+                            <b style="width:100%;"> > ./installer.sh --install</b><br><br>
+
+                            This may take a little time, during which you can go grab a cookie.
+
+                        </p>
+
+                        <h2 style="margin-top:60px; margin-bottom:50px; width:100%; font-family: 'Quicksand';">- Step 3:
+                            Run WiFi-Pumpkin -</h2>
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+
+                            When it's complete, run WiFi-Pumpkin by simply entering the following:<br><br>
+
+                            <b style="width:100%;"> > sudo wifi-pumpkin</b><br><br>
+
+                        </p>
+
+                        <h2 style="margin-top:60px; margin-bottom:50px; width:100%; font-family: 'Quicksand';">You're
+                            ready to get started
+                            creating fake APs</h2>
+
+                        <img style="width: 60%; display: block; margin-left: auto; margin-right: auto; margin-top: 2%; margin-bottom: 4%; border: 3px white solid"
+                            src="https://img.wonderhowto.com/img/12/06/63632814084258/0/build-pumpkin-pi-rogue-ap-mitm-framework-fits-your-pocket.w1456.jpg"
+                            alt="raspberry pi">
+
+
+                        <h2 style="margin-top:60px; margin-bottom:30px; width:100%; font-family: 'Quicksand';">* Some
+                            Considerations with the
+                            WiFi-Pumpkin *</h2>
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+                            Keep in mind, in order for WiFi-Pumpkin to work, you will need to have access to at least
+                            one
+                            Kali Linux compatible wireless adapter with AP/Monitor mode support.
+                            You will need your Pi to be connected to the internet while also capable of monitoring
+                            wireless
+                            traffic around you.<br><br>
+
+                            You can achieve this by using one wireless network adapter and your Pi's internal Wi-Fi card
+                            in
+                            tandem or a wired Ethernet connection and one
+                            wireless network adapter. In the case your particular Pi isn't Wi-Fi capable, you'll need
+                            two
+                            wireless network adapters. <br><br>
+                            If you are unsure if the wireless adapter you have supports AP/Monitor mode, you can check
+                            in
+                            terminal with iw list. <br><br>
+                            If there is an "AP" in the list of "Supported interface modes," then your device supports
+                            it.
+                        </p>
+                    </p>
+
+                </div>
+
+            </section>
+        </section>
+
+
+
+
+        <!--jquery and bootstrap files-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+
+        <!-- linking external script file -->
+        <script src="../js/script.js"></script>
+        <script src="../js/ui.js"></script>
+
+</body>
+
+</html>

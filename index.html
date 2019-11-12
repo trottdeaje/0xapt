@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0xApt</title>
+
+
+
+    <!-- Main styling sheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Linking PureCSS styling-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+        crossorigin="anonymous">
+    <!-- extra Styling for the PureCSS side navbar (z-index in styles.css) -->
+    <link rel="stylesheet" href="css/layout/purecss/side-menu.css">
+    <link rel="stylesheet" href="css/layout/purecss/pure-min.css">
+
+    <!-- Styling for the lock logo shine effect -->
+    <link rel="stylesheet" href="css/shine.css">
+
+    <!-- Styling for the Main content of the page ie. videos, writeups, images etc -->
+    <link rel="stylesheet" href="css/layout/content.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- MaterializeCSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- loading google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono">
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- Loading google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+
+<body>
+    <!-- Splashscreen Terminal animation - https://github.com/ines/termynal -->
+    <div class="preload">
+        <div class="termynal_contain">
+            <div id="termynal" data-termynal data-termynal data-ty-typeDelay="40" data-ty-lineDelay="700">
+
+                <span data-ty-delay="3000" data-ty-typeDelay="90" data-ty="input" data-ty-prompt="root@0xapt:~$">apt-get
+                    install webdev-backspace</span>
+                <span data-ty="input" data-ty-delay="3000" data-ty-typeDelay="10" data-ty-prompt="">Reading package
+                    lists...</span>
+                <span data-ty="input" data-ty-delay="2000" data-ty-typeDelay="10" data-ty-prompt="">Done</span>
+                <span data-ty="input" data-ty-delay="2500" data-ty-typeDelay="25" data-ty-prompt="">The following NEW
+                    packages will be installed:</span>
+                <span data-ty-typeDelay="40" data-ty="input" data-ty data-ty-prompt=" ">frontend-development-plugin,<br>
+                    w3schools-common-applet,<br>
+                    Chrome-dev-
+                </span>
+                <span data-ty-typeDelay="40" data-ty="input" data-ty-prompt=" ">tools,<br>
+                    vs-code-program,<br>
+                    freecode-util,<br>
+                    <br>
+                    <br>
+                    nelly-doc
+                </span>
+                <span data-ty></span>
+                <span data-ty="input" data-ty-typeDelay="10">Continue?</span>
+                <span data-ty="input" data-ty-typeDelay="3500" data-ty-delay="1500" data-ty-prompt="(y/n)">y</span>
+                <span data-ty-progressChar="." data-ty="progress"></span>
+                <span data-ty="input" data-ty-delay="2500" data-ty-typeDelay="10">>Successfully installed</span>
+                <span data-ty="input" data-ty-delay="3500" data-ty-prompt="">Ready to go! =) </span>
+                <span data-ty="input" data-ty-delay="3500" data-ty-startDelay="2500"
+                    data-ty-prompt="root@0xapt:~$">backspace</span>
+                <span data-ty></span>
+                <span data-ty="input" data-ty-delay="9999999" data-ty-prompt=">>>">Welcome to >Backspace_</span>
+
+            </div>
+            <div id="btn_contain"><button class="enter_link" id="btn_continue">Take me there now! </button></div>
+        </div>
+    </div>
+    <!-- #END# Splashscreen Terminal animation -->
+
+
+    <!-- Everything displayed on the page will be within this div container -->
+    <div class="container_ font_style">
+        <!-- Top Navbar -->
+        <section>
+            <div class="navbar" style="position: fixed;z-index: 3;">
+                <ul>
+                    <li class="test-shine"><a href="https://0xapt.duckdns.org/"><img src="./resources/bash.png"
+                                alt="bash"></a></li>
+
+                    <li class="nav_links hvr-grow" id="margin-adj"><a href="https://0xapt.duckdns.org/"
+                            style="margin-left: 26px;" class="modal-trigger topnav_style"
+                            data-target="modal-home"><span><img class="nav_icons"
+                                    src="resources/nav_icons/home-icon.svg"></span>
+                            <span class="text_disp">Home</span></a></li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/tools/"
+                            class="modal-trigger topnav_style" data-target="modal-tools"><span><img class="nav_icons"
+                                    src="resources/nav_icons/wrench.svg"></span> <span
+                                class="text_disp">Tools</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/hacking_resources/
+                        " class="modal-trigger topnav_style" data-target="modal-resources"><span><img class="nav_icons"
+                                    src="resources/nav_icons/open-book.svg"></span> <span class="text_disp">
+                                Resources</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/video/"
+                            class="modal-trigger topnav_style" data-target="modal-videos"><span><img class="nav_icons"
+                                    src="resources/nav_icons/play-button.svg"></span> <span class="text_disp">
+                                Videos</span></a>
+                    </li>
+                    <li class="nav_links hvr-grow admin" style="display: none;"><a href="#"
+                            class="modal-trigger topnav_style" data-target="modal-create"><span><img class="nav_icons"
+                                    src="resources/nav_icons/pencil.svg"></span>
+                            <span class="text_disp">
+                                Create Guide</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow logged-out" style="display: none;"><a href="#"
+                            class="modal-trigger topnav_style" data-target="modal-signup"><span><img class="nav_icons"
+                                    src=""></span> <span class="text_disp">
+                                Sign up</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow logged-out" style="display: none;"><a href="#"
+                            class="modal-trigger topnav_style" data-target="modal-login"><span><img class="nav_icons"
+                                    src=""></span> <span class="text_disp">
+                                Login</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow logged-in" style="display: none;"><a href="#" class="topnav_style"
+                            id="logout"><span><img class="nav_icons" src="resources/nav_icons/logout.svg"></span> <span
+                                class="text_disp">
+                                Logout</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow logged-in" style="display: none;"><a href="#"
+                            class="modal-trigger topnav_style" data-target="modal-account"><span><img class="nav_icons"
+                                    src=""></span> <span class="text_disp">
+                                Account</span></a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <!-- Signup Modal -->
+            <div id="modal-signup" class="modal">
+                <div class="modal-content">
+                    <h4>Sign Up</h4><br />
+                    <form id="signup-form">
+                        <div class="input-field">
+                            <input type="email" id="signup-email" required />
+                            <label for="signup-email">Email address</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="signup-password" required />
+                            <label for="signup-password">Choose password</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="signup-bio" required />
+                            <label for="signup-bio">One Line Bio</label>
+                        </div>
+                        <button class="btn waves-effect waves-light">Sign up &#128512
+                        </button>
+                        <!-- <button class="btn blue darken-2 z-depth-1">Sign up</button> -->
+                        <p class="error pink-text center-align"></p>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- Login Modal -->
+            <div id="modal-login" class="modal">
+                <div class="modal-content">
+                    <h4>Login</h4><br />
+                    <form id="login-form">
+                        <div class="input-field">
+                            <input type="email" id="login-email" required />
+                            <label for="login-email">Email address</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="login-password" required />
+                            <label for="login-password">Your password</label>
+                        </div>
+                        <button class="btn waves-effect waves-light">Sign In
+                            <i class="material-icons right">arrow_forward</i>
+                        </button>
+                        <!-- <button class="btn blue darken-2 z-depth-1">Sign in</button> -->
+                        <p class="error pink-text center-align"></p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Account Modal -->
+            <div id="modal-account" class="modal">
+                <div class="modal-content center-align">
+                    <h4>Account details</h4><br />
+                    <div class="account-details"></div>
+                </div>
+            </div>
+
+            <!-- Create Guide Modal -->
+            <div id="modal-create" class="modal">
+                <div class="modal-content">
+                    <h4>Create Guide</h4><br />
+                    <form id="create-form">
+                        <div class="input-field">
+                            <input type="text" id="title" required>
+                            <label for="title">Guide Title</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="content" class="materialize-textarea" required></textarea>
+                            <label for="content">Guide Content</label>
+                        </div>
+                        <button class="btn waves-effect waves-light">Create
+                            <i class="material-icons right">send</i>
+                        </button>
+                        <!-- <button class="btn blue darken-2 z-depth-1">Create</button> -->
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <!--#END# Top Navbar -->
+
+
+        <!-- Side Navbar - https://purecss.io/layouts/side-menu/ -->
+        <section class="side_navbar">
+            <div id="layout">
+                <!-- Menu toggle -->
+                <a href="#menu" id="menuLink" class="menu-link"
+                    style=" width: 56px;background-color:#131e31;opacity: 55%;padding: 15px;">
+                    <!-- Hamburger icon -->
+                    <span></span>
+                </a>
+                <!-- Side Navbar Menu Items -->
+                <div id="menu">
+                    <div class="pure-menu">
+                        <ul class="pure-menu-list" style="border: 0">
+                            <li class="pure-menu-item"><a href="https://0xapt.duckdns.org/"
+                                    class="pure-menu-link">Home</a></li>
+                            <li class="pure-menu-item"><a href="https://0xapt.duckdns.org/about/"
+                                    class="pure-menu-link">About</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #END# Side Navbar -->
+
+
+
+
+            <!-- Parent Container of all your content-->
+            <section id="content">
+
+                <!-- Main content of the page ie. Videos, Blogs, Images etc. Div's recommended (Check out content.css to change layout/ styling)
+    EXTRA NOTE - The width and height of this container stretches automatically with your content and wraps when it hits a certain width. Everything is set to be centered. Change content.css if you want to edit these options -->
+                <div id="inner_content">
+                    <!-- ADMIN ACTIONS -->
+                    <div class="admin-create">
+                        <form class="center-align admin-actions admin"
+                            style="margin: 40px auto; max-width: 300px; display:none;">
+                            <input style="color: white;height: 25px" type="email" placeholder="User email"
+                                id="admin-email" required />
+                            <button class="btn-small yellow darken-2 z-depth-1" style="height: 29px;">Make
+                                admin</button>
+                        </form>
+                    </div>
+                    <h1 style="width: 100%"><img src="./resources/backspace.gif" alt="logo" class="backspace_logo"></h1>
+
+
+
+                    <div class="container" style="margin-top:40px;">
+                        <ul class="collapsible z-depth-0 guides" style="border:none;">
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+        </section>
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <!-- <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script> -->
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-functions.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCqeAH4lm7dP-EzrR08pu28G3F9bHr9A-I",
+                authDomain: "backspace-site.firebaseapp.com",
+                databaseURL: "https://backspace-site.firebaseio.com",
+                projectId: "backspace-site",
+                appId: "1:392311367630:web:087975b0de36992289ad9f",
+                measurementId: "G-QL84XJ6TJB"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            // firebase.analytics();
+
+            // make auth and firestore references
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+            const functions = firebase.functions();
+        </script>
+
+        <!--jquery and bootstrap files-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+        <!-- linking external script file -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="./js/auth.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/termynal.js" data-termynal-container="#termynal"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/ui.js"></script>
+
+</body>
+
+</html>

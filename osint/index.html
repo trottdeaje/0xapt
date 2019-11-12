@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OSINT</title>
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+
+
+    <!-- Main styling sheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Linking PureCSS styling-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+        crossorigin="anonymous">
+    <!-- extra Styling for the PureCSS side navbar (z-index in styles.css) -->
+    <link rel="stylesheet" href="../css/layout/purecss/side-menu.css">
+    <link rel="stylesheet" href="../css/layout/purecss/pure-min.css">
+
+    <!-- Styling for the lock logo shine effect -->
+    <link rel="stylesheet" href="../css/shine.css">
+
+    <!-- Styling for the Main content of the page ie. videos, writeups, images etc -->
+    <link rel="stylesheet" href="../css/layout/content.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- loading google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+
+
+    <!-- Style for table -->
+
+    <style>
+        table {
+
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        td,
+        th {
+            border: 1px solid white;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: blue;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <!-- Everything displayed on the page will be within this div container -->
+    <div class="container_">
+
+
+        <!-- Top Navbar -->
+        <section>
+            <div class="navbar" style="position: fixed;z-index: 2;">
+                <ul>
+                    <li class="test-shine"><a href="https://0xapt.duckdns.org/"><img src="../resources/bash.png"
+                                alt="bash"></a></li>
+                    <li class="nav_links hvr-grow" id="margin-adj"><a href="https://0xapt.duckdns.org/"
+                            style="margin-left: 26px;" class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/home-icon.svg" alt="home"></span>
+                            <span class="text_disp">Home</span></a></li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/tools/
+                        " class="topnav_style"><span><img class="nav_icons" src="../resources/nav_icons/wrench.svg"
+                                    alt="tools"></span> <span class="text_disp">Tools</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/hacking_resources/
+                        " class="topnav_style"><span><img class="nav_icons" src="../resources/nav_icons/open-book.svg"
+                                    alt="resources"></span> <span class="text_disp">
+                                Resources</span></a>
+                    </li>
+
+                    <li class="nav_links hvr-grow"><a href="https://0xapt.duckdns.org/video"
+                            class="topnav_style"><span><img class="nav_icons"
+                                    src="../resources/nav_icons/play-button.svg" alt="videos"></span> <span
+                                class="text_disp">
+                                Videos</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--#END# Top Navbar -->
+
+
+        <!-- Side Navbar -->
+        <section class="side_navbar">
+            <div id="layout">
+                <!-- Menu toggle -->
+                <a href="#menu" id="menuLink" class="menu-link"
+                    style=" width: 56px;background-color:#131e31;opacity: 55%;padding: 15px;">
+                    <!-- Hamburger icon -->
+                    <span></span>
+                </a>
+                <!-- Side Navbar Menu Items -->
+                <div id="menu">
+                    <div class="pure-menu">
+
+                        <a href="https://0xapt.duckdns.org/wifi/" class="pure-menu-link">WiFi ~ Getting
+                            started</a>
+                        <a href="https://0xapt.duckdns.org/wifi/breaking_wps.html" class="pure-menu-link">WiFi ~
+                            Breaking WPS</a>
+                        <a href="https://0xapt.duckdns.org/wifi/cracking-wpa2-pixie.html" class="pure-menu-link">WiFi ~
+                            Cracking WPA2</a>
+                        <a href="https://0xapt.duckdns.org/wifi/rogue-ap.html" class="pure-menu-link">WiFi ~
+                            Rogue AP</a>
+                        <a href="https://0xapt.duckdns.org/web_hacking
+                            " class="pure-menu-link">Web Application</a>
+                        <a href="https://0xapt.duckdns.org/osint/
+                            " class="pure-menu-link">OSINT</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #END# Side Navbar -->
+
+
+
+
+            <!-- Parent Container of all your content-->
+            <section id="content">
+
+                <!-- Main content of the page ie. Videos, Blogs, Images etc. Div's recommended (Check out content.css to change layout/ styling)
+    EXTRA NOTE - The width and height of this container stretches automatically with your content and wraps when it hits a certain width. Everything is set to be centered. Change content.css if you want to edit these options -->
+                <div id="inner_content"
+                    style="padding-left:10% !important; padding-right:10% !important; background:  #0d1523 !important">
+                    <h1 style="width: 100%;font-family: 'Quicksand', sans-serif">>OSINT_</h1>
+                    <br>
+
+                    <h3 style="width:100%;text-align: center; margin-top: 50px; font-family: 'Quicksand', sans-serif">-
+                        Open Source
+                        Intellegence (OSINT) -</h3>
+
+                    <img style="width: 30%; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; border: 3px white solid;"
+                        src="https://media.giphy.com/media/VOPK1BqsMEJRS/giphy.gif" alt="tophat cat">
+
+
+
+                    <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+
+                        Open Source Intellegence (OSINT) is the Act of gaining any sort of publicly
+                        known Information about an entity. As many of us know (or may not know), there
+                        are multiple different phashes when it comes to attacking a target.<br><br>
+
+                        <b>- Scanning / Enumeration -</b><br><br>
+
+                        <b>- Gaining Access -</b><br><br>
+
+                        <b>- Maintaining Access -</b><br><br>
+
+                        <b>- Covering Tracks -</b><br><br>
+
+                        Within the scanning and enumeration phase, there are two different types of recon.<br><br>
+
+                        The first type, is known as <b>Active</b> recon. Active recon deals with gathering
+                        Information about a target using methods that may involve an attempt of social
+                        engineering, sending spoofed emails to targets colleagues trying to gain information
+                        from them, and dumpster diving (I'd wouldn't call this active, but for some reason many
+                        certifications such as the CEH would label it as active). The outcome for being caught
+                        when trying to perform active recon could lead to a huge fine, or posssibly jail time
+                        (unless done legally via pentest/assessment).<br><br>
+
+
+                        <img style="width: 40%; display: block; margin-left: auto; margin-top: 30px;margin-right: auto; margin-bottom: 40px; border: 3px white solid;"
+                            src="https://media.giphy.com/media/u7VJKE7sZUXEk/giphy.gif" alt="guy walking">
+
+
+
+                        The second type is <b>Passive</b> Recon. Passive recon deals with getting all of the information
+                        from publicly known sources. For example, lets say that we have a target "EvilCorp.com".
+                        where are some places to look, and gain information about the vitcim.<br><br>
+
+                        If you are familiar with <a href="https://0xapt.duckdns.org/web_hacking/web_hacking.html"
+                            target="_blank">Web application
+                            testing</a> then it'll be good
+                        to check for "Whois" information, DNS / Record information, use tools like <a
+                            href="https://github.com/laramies/theHarvester">theHarvester</a>,
+                        <a href="https://maltego.com" target="_blank">Maltego</a>, <a
+                            href="https://github.com/aboul3la/Sublist3r" target="_blank">Sublist3r</a>, OWAPSPs' <a
+                            href="https://github.com/OWASP/Amass" target="_blank">amass</a>, <a
+                            href="https://github.com/guelfoweb/knock" target="_blank">knockpy</a> (falls a bit into the
+                        active recon cat.), Google,
+                        peoplelookups, email lookups, there is an awesome site named "<a href="https://dehashed.com/"
+                            target="_blank">dehashed</a>" that contains many
+                        records of leaked passwords and all that you need to do is enter the email, and it gives
+                        back results of passwords for that email ONLY IF that email is signed up to a site that's had a
+                        really bad
+                        previous
+                        databreach.
+
+
+                        <img style="width: 40%; display: block; margin-left: auto; margin-top: 30px;margin-right: auto; margin-bottom: 40px; border: 3px white solid;"
+                            src="https://media.giphy.com/media/lzz3B3xLZluuY/giphy.gif" alt="cat at computer">
+
+                        <b>Whois</b> - information can give you names, emails, phone numbers, location of
+                        server/s.<br><br>
+
+                        Information that can be gathered from <b>DNS servers and Records</b> can disclose the network
+                        infrastructure
+                        of a company without alerting the IDS/IPS. This is beacuse most of the organizations are not
+                        monitoring their DNS server traffic, and those that do they only monitor the zone
+                        transfers attempts (trying to grab all DNS records at once).<br><br>
+
+                        <b>theHarvester</b> - attempts to locate other hosts from the specified domain, but also looks
+                        for emails on the site.<br><br>
+
+                        <b>Matlego</b> - can help search for emails, names, phone numbers.<br><br>
+
+                        <b>Sublist3r</b> - searches for subdomains. Perhaps EvilCorp.com has a subdomain
+                        test.EvilCorp.com
+                        that contains vulnerabilities in it that are not found inside of the original Domain.<br><br>
+
+                        <img style="width: 40%; display: block; margin-left: auto; margin-top: 30px;margin-right: auto; margin-bottom: 40px; border: 3px white solid;"
+                            src="http://giphygifs.s3.amazonaws.com/media/LZaNrkOLxI5Yk/giphy.gif" alt="kid dizzy">
+
+                        There are <b>tons</b> of ways to gather information, I'm not going to describe them all.<br><br>
+
+
+                        The goal isn't to..<br><br>
+                        <b>
+                            <div style="color:red; font-size: 30px; text-align:center;">Learn to use every single tool
+                                that's out THERE.</div>
+                        </b><br><br>
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+                            Pick a few that'll help you to accomplish what you're trying to do. Some may work better
+                            than
+                            others in certain occasions.<br><br>
+
+                            Learn how they work, and go from there.<br><br>
+
+                            Here are a few useful tips from my <u>experience</u>:<br><br>
+
+                            <h3 style="font-family: 'Quicksand';"><b>- Have a plan/starting point -</b></h3><br><br>
+
+                        </p>
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+
+                            How do you know what inforamtion to collect if you don't know what you're looking for? Doing
+                            this will
+                            help prevent you from gathering information that you don't need.
+
+                        </p><br><br>
+
+                        <h3 style="font-family: 'Quicksand';margin-top: 40px;"><b>- Link data together -</b></h3>
+
+                        <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+
+                            Found a username? Good. People will usually use the same username everywhere. Try searching
+                            that name in the browser.
+                            See what accounts are linked to it. Use sites that can identify which other social medias
+                            the target has, such as <a href="https://namechk.com/" target="_blank">namechk</a>
+                            <p style="text-align:center; font-size:15px; width:100%">Also check out: <a
+                                    href="https://github.com/smicallef/spiderfoot" target="_blank">Spiderfoot</a>
+
+                            </p>
+
+
+                            <h3 style="font-family: 'Quicksand';margin-top: 40px;"><b>- Social Media is your Best Friend
+                                    -</b></h3>
+
+                            <p style="width:100%; font-family: 'Quicksand'; margin-top: 40px; font-size: 21px;">
+                                Alot of people today post many of their information on their social media, names, age,
+                                snapchat even has a feature that allows
+                                you to share your location with followers, and its so accurate that you can find a
+                                persons exact location with it.
+                                Need to find out when someones birthday is? Search for anything stating "birthday" "hbd"
+                                on their feed.
+                                LinkedIn is also a really good source.<br><br>
+
+
+                                We've covered different types of ways at going about information gathering..
+                                but what now? What do we do with all of the information that we've collected?<br>
+
+
+                                <img style="width: 40%; display: block; margin-left: auto; margin-top: 30px;margin-right: auto; margin-bottom: 40px; border: 3px white solid;"
+                                    src="https://media.giphy.com/media/U3uEDJ2PfSQdG/giphy.gif"
+                                    alt="dog inside of a cannon">
+
+
+                                Take the time to look over your findings, begin to map out an attack vector. Look for a
+                                weak point. Then Finally. Execute.
+
+                            </p>
+
+
+
+                        </p>
+
+                </div>
+
+            </section>
+        </section>
+
+
+
+
+        <!--jquery and bootstrap files-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+
+        <!-- linking external script file -->
+        <script src="script.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/ui.js"></script>
+
+</body>
+
+</html>
