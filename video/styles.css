@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
+.contain{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
 video {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -59,4 +63,32 @@ video {
     bottom: 0px;
     right: 0px;
     left: 0px;
+}
+
+.modal {
+    border: 1px #ffffff4f solid;
+    width: 300px;
+    height: 600px;
+    z-index: 100;
+    position: absolute;
+    top: 8%;
+    background: rgba(0, 0, 0, 0.54);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+}
+
+.inner_modal {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* overflow-y: scroll; */
+    width: 100%;
+    height: 100%;
+
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
 }

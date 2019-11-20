@@ -302,7 +302,10 @@ button:hover {
 #btn_continue {
    opacity:5%;
    color: #ffffff;
-   border-radius: 24px
+   border-radius: 24px;
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
 }
 
 #btn_continue:hover {
@@ -310,9 +313,11 @@ button:hover {
 }
 
 #btn_contain {
+  width: 750px;
+  bottom: 25px;
+  height: 705px;
   position: fixed;
-  right: 26.7%;
-  bottom: 5.1%;
+  overflow: hidden;
 }
 
 
@@ -395,3 +400,6 @@ button:hover {
 }
 
 
+hr {
+  border-top: 1px solid white;
+}
