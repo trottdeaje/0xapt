@@ -89,6 +89,10 @@
     
 }
 
+.menu-item-style {
+  text-decoration: none !important;
+}
+
 
 #margin-adj {
     margin-left: 50px;
@@ -339,6 +343,7 @@ button:hover {
 .width_250 {
   width: 250px;
   height: auto;
+  border-radius: 50%;
 }
 
 /* glitch elem must have absolute position */
