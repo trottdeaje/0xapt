@@ -9,7 +9,7 @@ $("#submit_ip").click(function () {
     let usr_ip = $("#ip_scan").val()
 
     //puts the value of the IP address inside of the query 
-    let shodan_api = `https://api.shodan.io/shodan/host/${usr_ip}?key=Iu5v1030Aut42SS8w2bE23UeiFLCvswJ`
+
 
     //then initiates the get resquest of data
     $.get(shodan_api, function (response) {
